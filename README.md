@@ -24,6 +24,13 @@ ldconfig -p | grep -i ndpi
 find /usr/lib/ | grep -i ndpi
 find /usr/include/ | grep -i ndpi
 ```
+or 
+```
+git clone https://github.com/ntop/nDPI/tree/4.4-stable
+./autogen.sh
+make 
+make install
+```
 
 - Install required libs
   - Libpcap is used for packet capture
